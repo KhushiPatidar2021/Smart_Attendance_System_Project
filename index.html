@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="container">
+    <h2>Smart Attendance System</h2>
+
+    <div class="input-box">
+      <input type="text" id="studentName" placeholder="Enter Student Name">
+      <button id="addStudentBtn">Add Student</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Student">
+    </div>
+
+    <div class="summary">
+      <p>Total Students: <span id="totalCount">0</span> | 
+         Present: <span id="presentCount">0</span> | 
+         Absent: <span id="absentCount">0</span>
+      </p>
+      <button id="resetBtn">Reset Attendance</button>
+    </div>
+
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Present</th>
+          <th>Absent</th>
+          <th>Last Status</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
